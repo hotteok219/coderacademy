@@ -17,6 +17,10 @@ body {
 header {
     @include background-stuff();
 
+    @media  and (max-width: 600px) {
+        margin: 24px;
+    }
+
     .logo-name {
         margin-bottom: 24px;
 
@@ -70,3 +74,24 @@ footer {
         }
     }
 }
+
+@media screen and (min-width: 600px) {
+    header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        .logo-name {
+            // margin-bottom: 0;
+
+            .name {
+                margin-bottom: 0;
+            }
+        }
+
+        .nav-items {
+            width: 50%;
+        }
+    }
+}
+

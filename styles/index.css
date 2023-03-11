@@ -55,4 +55,21 @@ footer .info {
 }
 footer .info p {
   margin: 5px 0px;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  header .logo-name {
+    margin-bottom: 0;
+  }
+  header .logo-name .name {
+    margin-bottom: 0;
+  }
+  header .nav-items {
+    width: 50%;
+  }
 }/*# sourceMappingURL=index.css.map */
