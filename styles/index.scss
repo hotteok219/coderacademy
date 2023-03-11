@@ -3,7 +3,8 @@ $primary-background: #ffb6b6;
 @mixin background-stuff {
     background-color: $primary-background;
     padding: 16px;
-    text-align: center;}
+    text-align: center;
+}
 
 body {
     margin: 0;
@@ -17,8 +18,27 @@ body {
 header {
     @include background-stuff();
 
-    @media  and (max-width: 600px) {
+    @media screen and (max-width: 600px) {
         margin: 24px;
+
+
+        header {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            .logo-name {
+                // margin-bottom: 0;
+
+                .name {
+                    margin-bottom: 0;
+                }
+            }
+
+            .nav-items {
+                width: 50%;
+            }
+        }
     }
 
     .logo-name {
@@ -30,6 +50,7 @@ header {
             .coder-text {
                 color: #45A7C5;
             }
+
             .academy-text {
                 color: #1C3C5C;
             }
@@ -45,6 +66,18 @@ header {
         a {
             text-decoration: none;
             color: #10c7ff;
+        }
+    }
+}
+
+
+main {
+    section {
+        .jumbotron {
+            img {
+                height: 300px;
+                width: 100%;
+            }
         }
     }
 }
@@ -76,22 +109,11 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
-    header {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-
-        .logo-name {
-            // margin-bottom: 0;
-
-            .name {
-                margin-bottom: 0;
-            }
-        }
-
-        .nav-items {
+    footer {
+        .social-media {
             width: 50%;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }
-

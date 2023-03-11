@@ -12,6 +12,22 @@ header {
   padding: 16px;
   text-align: center;
 }
+@media screen and (max-width: 600px) {
+  header {
+    margin: 24px;
+  }
+  header header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  header header .logo-name .name {
+    margin-bottom: 0;
+  }
+  header header .nav-items {
+    width: 50%;
+  }
+}
 header .logo-name {
   margin-bottom: 24px;
 }
@@ -33,6 +49,11 @@ header .nav-items {
 header .nav-items a {
   text-decoration: none;
   color: #10c7ff;
+}
+
+main section .jumbotron img {
+  height: 300px;
+  width: 100%;
 }
 
 footer {
@@ -58,18 +79,9 @@ footer .info p {
 }
 
 @media screen and (min-width: 600px) {
-  header {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-  }
-  header .logo-name {
-    margin-bottom: 0;
-  }
-  header .logo-name .name {
-    margin-bottom: 0;
-  }
-  header .nav-items {
+  footer .social-media {
     width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }/*# sourceMappingURL=index.css.map */
